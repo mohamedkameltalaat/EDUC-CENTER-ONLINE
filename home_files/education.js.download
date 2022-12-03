@@ -1,0 +1,52 @@
+let menu_btn =document.querySelector(".fas.fa-bars");
+let slide =document.querySelector(".slide");
+let close_slide =document.querySelector(".close");
+let search=document.querySelector(".d-none");
+let form_search = document.querySelector(".form_search");
+
+
+
+search.onclick=function(){
+form_search.classList.toggle("active")
+}
+
+menu_btn.onclick=function(){
+    slide.classList.toggle("active")
+if(window.innerWidth > 1199){
+    document.body.classList.toggle("active")
+}else{
+     document.body.classList.remove("active")
+}
+}
+
+close_slide.onclick=function(){
+    slide.classList.remove("active")
+}
+
+window.onload=function(){
+    if(window.innerWidth>1199){
+        slide.classList.add("active")
+    }
+     if(window.innerWidth<1199){
+        slide.classList.remove("active")
+    }
+    if(window.innerWidth>1199){
+    document.body.classList.toggle("active")
+}else{
+     document.body.classList.remove("active")
+}
+}
+window.onresize=function(){
+    if(window.innerWidth>1199){
+        slide.classList.add("active")
+    }
+      if(window.innerWidth<1199){
+        slide.classList.remove("active")
+    }
+    if(window.innerWidth>1199){
+    document.body.classList.toggle("active")
+}else{
+     document.body.classList.remove("active")
+}
+}
+

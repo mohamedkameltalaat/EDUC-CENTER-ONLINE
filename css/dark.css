@@ -1,0 +1,101 @@
+/* body,
+header .form_search,
+header .form_search input,
+header .container ul li,
+.slide ul li:hover,
+.start_option .three_option > span,
+.start_option .two_option > span,
+.contact_content form input,
+.contact_content form textarea,
+.profile_content .likes > div,
+.update form input {
+  background-color: #333;
+} */
+/* header .form_search,
+header .container ul li {
+  border: 2px solid#333;
+} */
+/* header,
+.avatar.r,
+.start_option .container_option > div,
+.slide,
+.course .courses_container > div,
+.statistic > div,
+.review_content > div,
+.teacher .teacher_content > div,
+.contact_content > div:nth-child(2),
+.contact_content form,
+.contact .labels > div,
+.profile_content,
+.update form,
+.details,
+.playlist .playlist_video > div,
+.Profile_Details .brief,
+footer,
+.teacher .teacher_search input {
+  background-color: #222;
+} */
+
+/* header h2,
+header .container ul li i,
+header .form_search i,
+header .container ul li:hover i,
+.start_option .three_option > span:hover,
+.start_option .two_option > span:hover,
+.slide div button:hover,
+.slide ul li:hover a,
+.slide ul li:hover i,
+.start_option .four_option p,
+.course .courses_container > div > div h3,
+.course .courses_container > div > div span,
+.statistic > div p,
+.review_content > div > p,
+.teacher .teacher_content > div p,
+.profile_content span,
+.profile_content .likes > div > div p,
+.details .context .context_img div span,
+.Profile_Details .brief > p,
+.Profile_Details .brief .sub > div p,
+footer h2,
+.start_option .container_option > div h3,
+.start_option .container_option > div p,
+.slide ul li a,
+.avatar h3,
+.main_head,
+.start_option .three_option > span,
+.start_option .two_option > span,
+.course .courses_container h3,
+.teacher .teacher_search i,
+.teacher_content div h3,
+.contact .labels > div p,
+.about .about_choose > div h2,
+.statistic > div h3 {
+  color: white !important;
+} */
+
+.teacher .teacher_content > div > div p,
+.teacher .teacher_content div h2,
+.statistic > div p,
+.profile_content h3,
+.profile_content .likes > div > div span,
+.avatar.r,
+.contact_content form label {
+  color: #56a0d3 !important;
+}
+.review_content h3,
+.about .about_choose > div p,
+.contact .labels > div span,
+.update form label {
+  color: #777;
+}
+.profile_content .likes > div > div i {
+  font-size: 40px;
+  background: white;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+}
+.start_option .three_option > span:hover,
+.start_option .two_option > span:hover {
+  color: black !important;
+}

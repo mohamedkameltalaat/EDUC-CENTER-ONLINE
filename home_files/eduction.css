@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;600&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,600&display=swap");
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 5000px;
+  padding-left: 0px;
+  background-color: #eee;
+  font-family: "Nunito", sans-serif;
+}
+body.active {
+  padding-left: 280px;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: aquamarine;
+}
+::-webkit-scrollbar-track {
+  background-color: gainsboro;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  margin: 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* common elemnt  */
+
+.d_block {
+  display: block;
+}
+:root {
+  --main_color: #56a0d3;
+  --sub_color: #c4dff6;
+  --trans: 0.5s;
+  --black-colro: #2c3e50;
+}
+.d_hide {
+  display: none;
+}
+.d_flex_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.m-5 {
+  margin: 5px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-15 {
+  margin: 15px;
+}
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.t-center {
+  text-align: center;
+}
+.t-right {
+  text-align: right;
+}
+.t-left {
+  text-align: left;
+}
+.d-none {
+  display: none;
+}
+
+/* start media query  */
+@media (max-width: 767px) {
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 950px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px !important;
+  }
+}
+/* end media query  */
+/* common  */
+
+/* start dashboard  */
+
+/* start slide bar  */
+.slide {
+  width: 280px;
+  text-align: center;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.06);
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  left: -350px;
+  top: 0px;
+  z-index: 77;
+  transition: var(--trans);
+}
+.slide.active {
+  left: 0;
+}
+.slide > i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: bolder;
+  color: red;
+  background: black;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  display: none;
+}
+
+.slide div {
+  padding: 20px;
+}
+.slide div img {
+  width: 92px;
+  border-radius: 50%;
+  background: var(--main_color);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.slide div span {
+  color: #777;
+  font-size: 20px;
+  margin: 10px auto;
+}
+.slide div button {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  background-color: var(--main_color);
+  border: none;
+  height: 43px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: var(--trans);
+}
+.slide div button:hover {
+  background-color: var(--sub_color);
+  color: var(--main_color);
+  cursor: pointer;
+}
+.slide ul {
+  text-align: left;
+}
+.slide ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: var(--trans);
+}
+.slide ul li:hover {
+  background-color: #eee;
+}
+.slide ul li a {
+  padding: 10px;
+  display: block;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 18px;
+  transition: var(--trans);
+}
+.slide ul li:hover a {
+  padding-left: 25px;
+  color: var(--main_color);
+}
+.slide ul li i {
+  color: var(--main_color);
+  font-size: 25px;
+}
+.slide ul li:hover i {
+  color: #777;
+}
+/* end slide bar  */
+
+/* start header */
+.header_content {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+header {
+  background-color: white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header h2 {
+  color: var(--black-colro);
+}
+header .form_search {
+  position: relative;
+  width: 300px;
+  padding-left: 20px;
+  overflow: hidden;
+  border: 1px solid var(--main_color);
+  border-radius: 5px;
+  background-color: #eee;
+  height: 45px;
+}
+header .form_search input {
+  width: 100%;
+  border: none;
+  height: 100%;
+  background-color: #eee;
+}
+header .form_search input:focus::placeholder {
+  opacity: 0;
+}
+header .form_search input:focus {
+  outline: none;
+}
+header .form_search i {
+  position: absolute;
+  font-size: 25px;
+  color: var(--main_color);
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .container ul {
+  display: flex;
+}
+header .container ul li {
+  padding: 10px;
+  background-color: #eee;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  transition: var(--trans);
+}
+header .container ul li:hover {
+  border: 2px solid var(--main_color);
+  cursor: pointer;
+}
+header .container ul li:hover i {
+  color: var(--main_color);
+}
+header .container ul li i {
+  font-size: 23px;
+}
+
+@media (max-width: 767px) {
+  header .form_search {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    width: 90%;
+    transition: var(--trans);
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  header .form_search.active {
+    top: 90px;
+  }
+  .slide > i {
+    display: block;
+  }
+  .d-none {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    padding-left: 0px;
+  }
+}
+/* end header  */
+/* start start_option*/
+.start_option {
+  padding: 40px 0px;
+}
+.main_head {
+  position: relative;
+  margin-bottom: 50px;
+}
+.main_head::before,
+.main_head::after {
+  position: absolute;
+  left: 5px;
+  bottom: -20px;
+  content: "";
+  height: 3px;
+  width: 130px;
+  background-color: white;
+  z-index: 2;
+}
+.main_head::before {
+  background: var(--main_color);
+  width: 70px;
+  z-index: 3;
+}
+.start_option .container_option {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+  gap: 20px;
+}
+.start_option .container_option > div {
+  background-color: white;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+}
+.start_option .container_option > div h3 {
+  margin-bottom: 15px;
+}
+.start_option .container_option > div p {
+  color: var(--black-colro);
+}
+.start_option .container_option > div p span {
+  color: var(--main_color);
+}
+.start_option .container_option > div button {
+  padding: 10px;
+  background-color: var(--main_color);
+  transition: var(--trans);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 17px;
+  margin-top: 5px;
+  transition: var(--trans);
+}
+.start_option .container_option > div button:hover {
+  background-color: var(--sub_color);
+  color: var(--main_color);
+  cursor: pointer;
+}
+.start_option .two_option h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.start_option .three_option > span,
+.start_option .two_option > span {
+  padding: 10px;
+  background: #eee;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: var(--trans);
+}
+.start_option .three_option > span i,
+.start_option .two_option > span i {
+  margin-right: 5px;
+}
+.start_option .three_option > span:hover,
+.start_option .two_option > span:hover {
+  background-color: var(--sub_color);
+  color: var(--black-colro);
+  cursor: pointer;
+}
+.start_option .four_option p {
+  line-height: 2;
+  color: var(--black-colro);
+}
+.start_option .four_option button {
+  margin-top: 25px !important;
+  display: block;
+}
+
+/* end option  */
+
+/* start course  */
+.course {
+  padding: 40px 0px;
+}
+.course .courses_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 25px;
+}
+.course .courses_container > div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.course .courses_container > div > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.course .courses_container > div > div img {
+  width: 65px;
+  margin-right: 10px;
+  border: 3px;
+  background-color: var(--main_color);
+  display: block;
+}
+.course .courses_container > div > div h3 {
+  color: var(--black-colro);
+}
+.course .courses_container > div > div span {
+  color: #777;
+  font-size: 12px;
+}
+.course .courses_container > div .course-image {
+  position: relative;
+}
+.course .courses_container > div .course-image::after {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 33;
+  background-color: #00000059;
+  content: "13 Videos";
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.course .courses_container > div .course-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+.course .courses_container > div button,
+.course .container > button {
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  margin: 50px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main_color);
+  color: white;
+  display: block;
+  transition: var(--trans);
+  font-size: 19px;
+}
+.course .courses_container > div button {
+  margin: 20px 5px;
+  padding: 10px;
+  width: 140px;
+}
+.course .courses_container > div button:hover,
+.course .container > button:hover {
+  background-color: var(--sub_color);
+  color: var(--main_color);
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  height: 60px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+footer h2 {
+  color: var(--black-colro);
+}
+footer h2 span {
+  color: var(--main_color);
+}

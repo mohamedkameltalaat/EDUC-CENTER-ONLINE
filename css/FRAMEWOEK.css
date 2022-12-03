@@ -1,0 +1,54 @@
+.d_block {
+  display: block;
+}
+:root {
+  --main_color: #56a0d3;
+  --sub_color: #c4dff6;
+  --trans: 0.5s;
+}
+.d_hide {
+  display: none;
+}
+.d_flex_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.m-5 {
+  margin: 5px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-15 {
+  margin: 15px;
+}
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.t-center {
+  text-align: center;
+}
+.t-right {
+  text-align: right;
+}
+.t-left {
+  text-align: left;
+}
+
+/* start media query  */
+@media (max-width: 767px) {
+}
+@media (min-max: 768px) {
+}
+@media (min-max: 992px) {
+}
+@media (min-max: 1200px) {
+}
+/* end media query  */
